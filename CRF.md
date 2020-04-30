@@ -17,6 +17,6 @@
 # 一类有结构的预测问题
 ## another type of prediction problems which involve structure
 ### part-of-speech tagging
-- each $x_i$ describes a word and each y_i the associated part-of-speech of the word x_i (e.g.: noun, verb, adjective, etc.).
+- each $x_i$ describes a word and each $y_i$ the associated part-of-speech of the word $x_i$ (e.g.: noun, verb, adjective, etc.).
 
-$$\(ax^2 + bx + c = 0\)$$
+$$ ax^2 + bx + c = 0 $$
