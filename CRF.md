@@ -20,3 +20,4 @@
 - each $x_i$ describes a word and each $y_i$ the associated part-of-speech of the word $x_i$ (e.g.: noun, verb, adjective, etc.).
 
 $$ ax^2 + bx + c = 0 $$
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
