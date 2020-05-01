@@ -22,11 +22,11 @@ $$ L(\vec W, \alpha, \beta) = f(\vec W) + \sum_{i=1}^K \alpha_i g_i(\vec W) + \s
   - $ (\vec \alpha^* , \vec \beta^* ) $是dual problem $ \max \Theta(\alpha, \beta) $的解$ \rightarrow \alpha_i^* \ge 0 $
   - $ \sum_{i=1}^K \alpha_i^* g_i(\vec W^* ) \le 0, \sum_{i=1}^M \beta_i^* h_i(\vec W^* ) = 0 $
   - $ \Theta(\vec \alpha^* , \vec \beta^* ) \le f(\vec W^* ) + $ 负数 $\rightarrow \Theta(\vec \alpha^* , \vec \beta^* ) \le f(\vec W^* ) $
-3. Duality gap 对偶问题的间距$ G(\vec W^* ) - \Theta(\vec alpha^* , \vec beta^* ) \ge 0
- - 强对偶定理， 某些特定问题可以证明$ G(\vec W^*) = 0 $
+3. Duality gap 对偶问题的间距$ G= f(\vec W^* ) - \Theta(\vec alpha^* , \vec beta^* ) \ge 0
+ - 强对偶定理， 某些特定问题可以证明$ G = 0 $
   - 若$ f(\vec W) $是凸函数，且$ g(\vec w) = A\vec W + b, h(\vec W) = C\vec W + d $, 即$ g(\vec W), h(\vec W) $都是线性的
   - 则此优化问题的原问题与对偶问题间距为0, 即若$ \vec W^* $是prime problem $\min \quad f(\vec W)$ 的解，而$ (\vec \alpha^* , \vec \beta^* ) $是dual problem $ \max \Theta(\alpha, \beta) $的解，则$ f(\vec W^* ) = \Theta(\vec \alpha^* , \vec \beta^* ) $ 
   - Ref Convex optimization P1-p150
-- KKT条件： $\for i = 1, \dots, m, \alpha_i^* = 0\ or\ g_i(\vec W^*) = 0 $
+- KKT条件： $\forall i = 1, \dots, m, \alpha^* _i = 0\ or\ g^* _i(\vec W^*) = 0 $
   
  
