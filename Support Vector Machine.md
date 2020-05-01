@@ -37,5 +37,5 @@ $$
 $$
 \begin{bmatrix}
 x_1 \\\
-x_2 \end{bmatrix}
+x_2 \\\\end{bmatrix}
 $$
