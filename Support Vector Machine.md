@@ -18,14 +18,15 @@
 将最大化d (margin)的直线平行移动 与 样本交叉的向量 == Support Vector
 
 ### 样本+线性模型定义
-$m$ 个训练样本及标签: $(\vec X_1, y_1), (\vec X_2, y_2), (\vec X_3, y_3), \cdots, (\vec X_m, y_m)$
+#### $m$ 个训练样本及标签: $(\vec X_1, y_1), (\vec X_2, y_2), (\vec X_3, y_3), \cdots, (\vec X_m, y_m)$
 - $\vec X_i$ 在$R^2$空间中表现为$\begin{bmatrix}x_1 \\\x_2 \\\ \end{bmatrix}$
 - $y_i = \pm 1$为二分类中向量$\vec X_i$的标签
-线性模型参数$(\vec W, b)$
-- Hyperplane: $\vec W^TX + b = 0$
+#### 线性模型参数$(\vec W, b)$
+- Hyperplane: $\vec W^TX + b = 0$, b是常数
 - $\vec W$ 和 $\vec X_i$ 的特征维数相同，如
 $ \vec X_1 = \begin{bmatrix}x_{11}\\\ x_{12}\\\ \cdots\\\ x_{1n} \end{bmatrix} $; 
 $ \vec W = \begin{bmatrix}w_{1}\\\ w_{2}\\\ \cdots\\\ w_{n} \end{bmatrix} $
+$ \vec W^T = \begin{bmatrix}w_{1} & w_{2} & \cdots & w_{n} \end{bmatrix} $
 
 
 
