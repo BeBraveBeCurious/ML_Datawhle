@@ -64,9 +64,10 @@ $\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
 
   
 ## SVM non-linear模型
-### 非线性可分情况下，约束调节引入slack variable $\xi, \xi \ge 0$ 
-- objective 相应变化为$\min\quad \frac{1}{2} ||\vec W||^2 + C \sum_1^n \xi$
-- s.t. $ y_i[\vec W_^T \vec X + b] \ge 1 - \xi, \xi \ge 0, i = 1, \ldots, m.$
+### 非线性可分情况下，约束调节引入slack variable $\xi_i, \xi_i \ge 0$ 
+- objective 相应变化为$\min\quad \frac{1}{2} ||\vec W||^2 + C \sum_{i=1}^n \xi_i$
+- s.t. $ y_i[\vec W_^T \vec X + b] \ge 1 - \xi_i, $
+       $\xi_i \ge 0, i = 1, \ldots, m.$
 
 
 
