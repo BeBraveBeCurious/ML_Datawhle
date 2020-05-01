@@ -52,4 +52,8 @@ $ \Theta(\vec \mu, \vec \nu) = \inf \limits_{all\ \vec W, \xi_i, b}L(\vec W, \ve
 - 根据偏导数=0化简$ \Theta(\vec \mu, \vec \nu) $
   - Eq. (4) $ \rightarrow \Theta(\vec \mu, \vec \nu)= \inf \limits_{all\ \vec W, \xi_i, b}(\frac{1}{2}||\vec W||^2 + \sum_{i=1}^m\mu_i (1 - y_i[\vec W^T\Phi(\vec X_i) - b])) $
   - Eq. (5) $ \rightarrow \Theta(\vec \mu, \vec \nu)= \inf \limits_{all\ \vec W, \xi_i, b}(\frac{1}{2}||\vec W||^2 + \sum_{i=1}^m\mu_i -\sum_{i=1}^m \mu_i y_i\vec W^T\Phi(\vec X_i)) $ because $ \sum_{i=1}^m \mu_i y_i b = b \sum_{i=1}^m \mu_i y_i = 0$
-  - 待入Eq. (3)得到，$ \Theta(\vec \mu, \vec \nu) = \inf \limits_{all\ \vec W, \xi_i, b}(\sum_{i=1}^m\mu_i - \frac{1}{2}\sum_{i=1}^m\sum_{j=1}^m \mu_i\mu_j y_iy_j\Phi(\vec X_i)^T\phi(\vec X_j)) $
+  - 待入Eq. (3)得到，$ \Theta(\vec \mu, \vec \nu) = \inf \limits_{all\ \vec W, \xi_i, b}(\sum_{i=1}^m\mu_i - \frac{1}{2}\sum_{i=1}^m\sum_{j=1}^m \mu_i\mu_j y_iy_j\Phi(\vec X_i)^T\phi(\vec X_j)) = \inf \limits_{all\ \vec W, \xi_i, b}(\sum_{i=1}^m\mu_i - \frac{1}{2}\sum_{i=1}^m\sum_{j=1}^m \mu_i\mu_j y_i y_j K(\vec X_i, \vec X_j)) $ 
+  - s.t.$ 0 \le \mu_i \le C $ because $0 \le \mu_i, 0 \le \nu_i, \mu_i + \nu_i = C
+  - \quad \ sum_{i=1}^m \mu_i y_i = 0
+  
+  
