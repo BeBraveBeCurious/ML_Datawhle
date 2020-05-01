@@ -46,7 +46,12 @@ $\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
 ## Linear SVM 优化模型
 - 最大化margin变为最小化$\begin{Vmatrix}w \end{Vmatrix}^2 $
 - subject to $y_i[\vec W^TX + b] \ge 0 $
-
+### 2个事实for目标转化
+- 事实1: $\vec W^TX + b = 0$ 与 $a\vec W^TX + ab = 0, a \in R^+$ 是同一个平面
+  - 若$(\vec W, b)$满足公式(1) 且 $a \in R^+$, 则$(a\vec W, ab)$也满足公式(1)
+- 事实2: 点到平面的距离公式
+  - 点$(x_0, y_0)$到平面$w_1x + w_2y + b = 0$的距离$d = \frac{|w_1x_0 + w_2y_0 + b|}{\sqrt{w_1^2 + w_2^2}}$
+  - 向量$x_0$到超平面$\vec W^TX + b = 0$的距离$d = \frac{|\vec W^TX + b|}{\sqrt{||w||^2}}$
 
 
 
