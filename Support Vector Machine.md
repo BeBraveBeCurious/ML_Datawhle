@@ -44,9 +44,14 @@ $\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
 
 
 ## Linear SVM 优化模型
-- 最大化margin变为最小化$\min   \quad   \frac{1}{2} ||w||^2$
+- 最大化margin变为最小化$\min   \quad   \frac{1}{2} ||\vec W||^2$ = \frac {1}{2}(w_1^2 + w_2^2 + \ldots + w_n^2)
 - subject to $y_i[\vec W^T\vec X + b] \ge 1 $
 - 1可以换为任意整数根据事实1
+### 二次规划 Quadratic programming
+- 目标函数为二次项
+- 限制条件一次项，$y_i = \pm 1$
+- 要么无解，要么只有一个极值
+
 ### 2个事实for目标转化
 - 事实1: $\vec W^T\vec X + b = 0$ 与 $a\vec W^T\vec X + ab = 0, a \in R^+$ 是同一个平面
   - 若$(\vec W, b)$满足公式(1) 且 $a \in R^+$, 则$(a\vec W, ab)$也满足公式(1)
