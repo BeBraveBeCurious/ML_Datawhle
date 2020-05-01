@@ -8,5 +8,5 @@ general普适的定义，可解 $\max$ 目标问题和约束 $ \ge 0 $
 dual problem: 
 $$ L(\vec W, \alpha, \beta) = $$
 $$ f(\vec W) + $$
-$$ \sum{i=1}^K \alpha_ig_i(\vec W) + $$
-$$ \sum{i=1}^M \betah_i(\vec W) $$
+$$ \sum_{i=1}^K \alpha_i g_i(\vec W) + $$
+$$ \sum_{i=1}^M \beta_i h_i(\vec W) $$
