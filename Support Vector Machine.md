@@ -32,7 +32,7 @@ $ \vec W^TX_{i} = \begin{bmatrix}w_{1} & w_{2} & \cdots & w_{n} \end{bmatrix}  \
 - 模型里留出一些待定参数, i.e., $\vec W, b$
 - 用训练样本和算法确定待定参数的具体取值, i.e., 确定$\vec W, b$的值，则完成机器学习过程。
 #### 4. 训练集线性可分的定义
-$\exists (\vec W, b)使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
+$\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
 - 若$y_i = 1, \vec W^TX + b \ge 0$
 - 若$y_i = -1, \vec W^TX +b \lt 0$
 
