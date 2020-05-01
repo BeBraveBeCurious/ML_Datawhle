@@ -89,11 +89,16 @@ $\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
   - $$ \Phi(x_3) = \begin{bmatrix}1 \\\0 \\\1 \\\0 \\\0 \end{bmatrix}; \Phi(x_4) = \begin{bmatrix}0 \\\1 \\\0 \\\1 \\\0 \end{bmatrix} $$ 
 - 找 $\vec W, b$ 使 $\Phi(x_1),\Phi(x_2) \in C_1; \Phi(x_3),\Phi(x_4) \in C_2$
   - 两类区别主要在 $ab$ 最后一项
-  - $\vec W = \begin{bmatrix}-1 \\\ -1 \\\ -1 \\\ -1 \\\ 6 \end{bmatrix}$, 分类 $\Phi(x_2)$ 为正
-  - $b = 1$ 分类 $\Phi(x_1)$ 为正
-  
-
-
+  - $\vec W = \begin{bmatrix}-1 \\\ -1 \\\ -1 \\\ -1 \\\ 6 \end{bmatrix}$, 分类 $\Phi(x_2)$ = -4 + 6 + 1 =3，为正
+  - $b = 1$ 分类 $\Phi(x_1)$ = 0 + 1， 为正
+2. 低维到高维映射后的objective
+$$\min\quad \frac{1}{2} ||\vec W||^2 + C \sum_{i=1}^m \xi_i \\
+s.t. $ y_i[\vec W^T \Phi(\vec X_i) + b] \ge 1 - \xi_i, \xi_i \ge 0, i = 1, \ldots, m. \tag{2}$
+- 其中\vec W^T的维度由原来的 $\vec X_i$ 的维度变为 $\vec \Phi(X_i)$, 如XOR中 $R^2$ 变为 $R^5$
+3. Vapnik SVM创意： $\Phi(\vec X_i)$是无限维
+- 可以不知道无限维映射 $\Phi(\vec X_i)$ 的显式表达式
+- 知道Kernel function： $K(\vec X_1, \vec X_2) = \Phi(\vec X_1)^T\Phi(\vec X_2)$
+- 则nonlinear SVM优化(2)可解
 
 
 
