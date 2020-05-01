@@ -19,15 +19,15 @@
 
 ### 样本定义
 $m$ 个训练样本及标签: $(\vec X_1, y_1), (\vec X_2, y_2), (\vec X_3, y_3), \cdots, (\vec X_m, y_m)$
-- $\vec X_i$ 在$R^2$空间中表现为$\begin{bmatrix}x_1 \\x_2 \\ \end{bmatrix}$
+- $\vec X_i$ 在$R^2$空间中表现为$\begin{bmatrix}x_1 \\\x_2 \\\ \end{bmatrix}$
 
   $\begin{matrix} a & b \\ c & d \end{matrix}$
 
 $$
  \left[
  \begin{matrix}
-   1 & 2 & 3 \\
-   4 & 5 & 6 \\
+   1 & 2 & 3 \\\
+   4 & 5 & 6 \\\
    7 & 8 & 9
   \end{matrix}
   \right] \tag{3}
