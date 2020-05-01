@@ -23,7 +23,9 @@ $m$ 个训练样本及标签: $(\vec X_1, y_1), (\vec X_2, y_2), (\vec X_3, y_3)
 - $y_i = \pm 1$为二分类中向量$\vec X_i$的标签
 线性模型参数$(\vec W, b)$
 - Hyperplane: $\vec W^TX + b = 0$
-
+- $\vec W$ 和 $\vec X_i$ 的特征维数相同，如
+$$ \vec X_1 = \begin{bmatrix}x_11\\\ x_12\\\ \cdots\\\ x_1n \end{bmatrix} $$
+$$ \vec W_1 = \begin{bmatrix}w_11\\\ w_12\\\ \cdots\\\ w_1n \end{bmatrix} $$
 
 
 
