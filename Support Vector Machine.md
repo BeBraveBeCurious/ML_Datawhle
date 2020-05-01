@@ -93,7 +93,7 @@ $\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
   - $b = 1$ 分类 $\Phi(x_1)$ = 0 + 1， 为正
 2. 低维到高维映射后的objective
 $$\min\quad \frac{1}{2} ||\vec W||^2 + C \sum_{i=1}^m \xi_i \\
-s.t. $ y_i[\vec W^T \Phi(\vec X_i) + b] \ge 1 - \xi_i, \xi_i \ge 0, i = 1, \ldots, m. \tag{2} $
+s.t. $ y_i[\vec W^T \Phi(\vec X_i) + b] \ge 1 - \xi_i, \xi_i \ge 0, i = 1, \ldots, m. \tag{2} $$
 - 其中\vec W^T的维度由原来的 $\vec X_i$ 的维度变为 $\vec \Phi(X_i)$, 如XOR中 $R^2$ 变为 $R^5$
 3. Vapnik SVM创意： $\Phi(\vec X_i)$是无限维
 - 可以不知道无限维映射 $\Phi(\vec X_i)$ 的显式表达式
