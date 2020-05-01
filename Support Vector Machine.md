@@ -85,10 +85,20 @@ $\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
   - $$ x_2 = \begin{bmatrix}1 \\\1 \\\ \end{bmatrix} \in C_1 $$
   - $$ x_3 = \begin{bmatrix}1 \\\0 \\\ \end{bmatrix} \in C_2 $$
   - $$ x_4 = \begin{bmatrix}0 \\\1 \\\ \end{bmatrix} \in C_2 $$
-- $X = \begin{bmatrix}a \\\b \\\ \end{bmatrix} \xrightarrow{\Phi(x)} \Phi(x) = \begin{bmatrix}a^2 \\\b^2 \\\ a \\\b \\\ab \end{bmatrix}$
+- 映射函数$X = \begin{bmatrix}a \\\b \\\ \end{bmatrix} \xrightarrow{\Phi} \Phi(x) = \begin{bmatrix}a^2 \\\b^2 \\\ a \\\b \\\ab \end{bmatrix}$
+- 映射后的4点坐标
+  - $$ \Phi(x_1) = \begin{bmatrix}0 \\\0 \\\0 \\\0 \\\0 \end{bmatrix} $$
+  - $$ \Phi(x_2) = \begin{bmatrix}1 \\\1 \\\1 \\\1 \\\1 \end{bmatrix} $$
+  - $$ \Phi(x_3) = \begin{bmatrix}1 \\\0 \\\1 \\\0 \\\0 \end{bmatrix} $$
+  - $$ \Phi(x_4) = \begin{bmatrix}0 \\\1 \\\0 \\\1 \\\0 \end{bmatrix} $$ 
+- 找 $\vec W, b$ 使 $\Phi(x_1),\Phi(x_2) \in C_1; \Phi(x_3),\Phi(x_4) \in C_2$
+  - 两类区别主要在 $ab$ 最后一项
+  - $\vec W = \begin{bmatrix}-1 \\\-1 \\\-1 \\\-1 \\\1 \end{bmatrix}, b \gt 4$
+  
 
 
-$\Phi(x)$ = $a^2 + b^2 + a + b $
+
+
 
 
 
