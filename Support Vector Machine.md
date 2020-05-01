@@ -22,7 +22,7 @@ $m$ 个训练样本及标签: $(\vec X_1, y_1), (\vec X_2, y_2), (\vec X_3, y_3)
 - $\vec X_i$ 在$R^2$空间中表现为$\begin{bmatrix}x_1 \\\x_2 \\\ \end{bmatrix}$
 - $y_i = \pm 1$为二分类中向量$\vec X_i$的标签
 线性模型参数$(\vec W, b)$
-- Hyperplane: $\vec W^T X + b = $
+- Hyperplane: $\vec W^TX + b = 0$
 
 
 
