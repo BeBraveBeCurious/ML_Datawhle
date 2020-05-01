@@ -51,4 +51,4 @@ $ \Theta(\vec \mu, \vec \nu) = \inf \limits_{all\ \vec W, \xi_i, b}L(\vec W, \ve
   - $\partial\frac{\Theta(\vec \mu, \vec \nu)}{b} = -\sum_{i=1}^m\mu_i y_i \rightarrow \ \sum_{i=1}^m\mu_i y_i = 0\tag{5} $
 - 根据偏导数=0化简$ \Theta(\vec \mu, \vec \nu) $
   - Eq. (4) $ \rightarrow \Theta(\vec \mu, \vec \nu)= \inf \limits_{all\ \vec W, \xi_i, b}(\frac{1}{2}||\vec W||^2 + \sum_{i=1}^m\mu_i (\xi_i - y_i[\vec W^T\Phi(\vec X_i) + b]) $
-  - Eq. (5) $ \rightarrow \Theta(\vec \mu, \vec \nu)= \inf \limits_{all\ \vec W, \xi_i, b}(\frac{1}{2}||\vec W||^2 + \sum_{i=1}^m\mu_i\xi_i -\sum_{i=1}^m \mu_i yi_y\vec W^T\Phi(\vec X_i) % because $ \sum{i=1}^m \mu_i y_i b = b \sum{i=1}^m \mu_i y_i = 0$
+  - Eq. (5) $ \rightarrow \Theta(\vec \mu, \vec \nu)= \inf \limits_{all\ \vec W, \xi_i, b}(\frac{1}{2}||\vec W||^2 + \sum_{i=1}^m\mu_i\xi_i -\sum_{i=1}^m \mu_i y_i\vec W^T\Phi(\vec X_i) $ because $ \sum{i=1}^m \mu_i y_i b = b \sum{i=1}^m \mu_i y_i = 0$
