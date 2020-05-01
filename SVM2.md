@@ -15,4 +15,4 @@ $$ L(\vec W, \alpha, \beta) = f(\vec W) + \sum_{i=1}^K \alpha_i g_i(\vec W) + \s
   - $g(\vec W) = \begin{bmatrix} g_1(\vec W)\\\ g_2(\vec W)\\\ \dots\\\ g_K(\vec W)\end{bmatrix}, h(\vec W) = \begin{bmatrix} h_1(\vec W)\\\ h_2(\vec W)\\\ \dots\\\ h_M(\vec W)\end{bmatrix}$
 
 2. relationship between prime problem and dual problem
-- 定理： 若$ \vec W^* $是prime problem $\min \quad f(\vec W)$ 的解，而$ (\vec \alpha^* , \vec \beta^* ) $是dual problem $ \max \Theta(\alpha, \beta) $的解，则$ f(\vec W^* ) \ge \Theta(\vec \alpha^* , \vec \beta^* )
+- 定理： 若$ \vec W^* $是prime problem $\min \quad f(\vec W)$ 的解，而$ (\vec \alpha^* , \vec \beta^* ) $是dual problem $ \max \Theta(\alpha, \beta) $的解，则$ f(\vec W^* ) \ge \Theta(\vec \alpha^* , \vec \beta^* ) $
