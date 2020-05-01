@@ -54,7 +54,7 @@ $\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
   - 向量$x_0$到超平面$\vec W^T\vec X + b = 0$的距离$d = \frac{|\vec W^T\vec X + b|}{||\vec W||}$, where $||\vec W|| = \sqrt{w_1^2 + w_2^2 + \ldots + w_n^2}$
   - 若$\vec X_0$为支持向量，使$d$最大则需使$||\vec w||$最小。
 - 用$a$缩放$(\vec W, b)\rightarrow(a\vec W, ab), a \in R^+$使在所有的支持向量$\vec X_0$上有$|W^T\vec X_0 + b| = 1$
-  - 此时，支持向量与平面的距离 $d = frac{1}{||\vec W||}
+  - 此时，支持向量与平面的距离 $d = frac{1}{||\vec W||}$
 
   
 
