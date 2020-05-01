@@ -36,7 +36,8 @@ $ \vec W^TX_{i} = \begin{bmatrix}w_{1} & w_{2} & \cdots & w_{n} \end{bmatrix}  \
 $\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
 - 若$y_i = 1, \vec W^TX + b \ge 0$
 - 若$y_i = -1, \vec W^TX +b \lt 0$
-- 在$y_i = \qm 1$时，统一表达为$y_i[\vec W^TX + b] \ge 0$
+- 在$y_i = \pm 1$时，统一表达为$y_i[\vec W^TX + b] \ge 0$
+
 或者以下定义也可，求解的$\vec W, b$有一个负号差距。
 - 若$y_i = 1, \vec W^TX + b \lt 0$
 - 若$y_i = -1, \vec W^TX +b \ge 0$
