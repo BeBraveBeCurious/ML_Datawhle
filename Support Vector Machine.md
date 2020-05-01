@@ -65,10 +65,14 @@ $\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
   
 ## SVM non-linear模型
 ### 非线性可分情况下，约束调节引入slack variable $\xi_i, \xi_i \ge 0$ 
-- objective 相应变化为$\min\quad \frac{1}{2} ||\vec W||^2 + C \sum_{i=1}^n \xi_i$
-- s.t. $ y_i[\vec W_^T \vec X + b] \ge 1  $
-       $\xi_i \ge 0, i = 1, \ldots, m.$
-
+- objective 相应变化为$\min\quad \frac{1}{2} ||\vec W||^2 + C \sum_{i=1}^m \xi_i$
+- s.t. $ y_i[\vec W^T \vec X_i + b] \ge 1 - \xi_i, \xi_i \ge 0, i = 1, \ldots, m.$
+- 若 $\xi_i$ 是一个非常大的数，那么$ 1 - \xi_i$会是一个比较小的负数，因此$ y_i[\vec W^T \vec X + b] \ge 1 - \xi_i $必然成立
+- 优化目标中的regulation term正则项 $C \sum_{i=1}^n \xi_i$ 则使 $\xi_i$ 不能变得非常大
+- regulation term正则项 $C \sum_{i=1}^n \xi_i$ 中的 $C$ 是事先设定的参数，平衡最大化margin和正则项的重要性
+- libsvm 中 $C$ 的值是[-15:0.5:15],不断尝试； SVM中需要尝试的参数只有 $C$ 
+- 已知量是 $ y_i, \vec X_i
+- 待求量是 $\vec W, b, \xi_i$
 
 
 
