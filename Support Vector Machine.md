@@ -89,7 +89,8 @@ $\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
   - $$ \Phi(x_3) = \begin{bmatrix}1 \\\0 \\\1 \\\0 \\\0 \end{bmatrix}; \Phi(x_4) = \begin{bmatrix}0 \\\1 \\\0 \\\1 \\\0 \end{bmatrix} $$ 
 - 找 $\vec W, b$ 使 $\Phi(x_1),\Phi(x_2) \in C_1; \Phi(x_3),\Phi(x_4) \in C_2$
   - 两类区别主要在 $ab$ 最后一项
-  - $\vec W = \begin{bmatrix} -1 \\\-1 \\\-1 \\\-1 \\\1 \end{bmatrix}, b \gt 4$
+  - $\vec W = \begin{bmatrix} -1 \\\-1 \\\-1 \\\-1 \\\6 \end{bmatrix}$
+  - $b = 1$
   
 
 
