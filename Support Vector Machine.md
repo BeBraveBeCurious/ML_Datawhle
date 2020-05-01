@@ -26,9 +26,9 @@
 - $\vec W$ 和 $\vec X_i$ 的特征维数相同，如
 $ \vec X_1 = \begin{bmatrix}x_{11}\\\ x_{12}\\\ \cdots\\\ x_{1n} \end{bmatrix} $; 
 $ \vec W = \begin{bmatrix}w_{1}\\\ w_{2}\\\ \cdots\\\ w_{n} \end{bmatrix} $; 
-$ \vec W^TX_{i} = \begin{bmatrix}w_{1} & w_{2} & \cdots & w_{n} \end{bmatrix}  \begin{bmatrix}x_{i1} \\\ x_{i2} \\\ \cdots \\\ x_{im} \end{bmatrix} = 常数 $
+$ \vec W^T\vec X_{i} = \begin{bmatrix}w_{1} & w_{2} & \cdots & w_{n} \end{bmatrix}  \begin{bmatrix}x_{i1} \\\ x_{i2} \\\ \cdots \\\ x_{in} \end{bmatrix} = 常数 $
 #### 3. 使用机器学习学习参数的步骤
-- 限定一个模型：方程or复杂模型, i.e., 超平面$\vec W^TX + b = 0$
+- 限定一个模型：方程or复杂模型, i.e., 超平面$\vec W^T\vec X + b = 0$
 - 模型里留出一些待定参数, i.e., $\vec W, b$
 - 用训练样本和算法确定待定参数的具体取值, i.e., 确定$\vec W, b$的值，则完成机器学习过程。
 #### 4. 训练集线性可分的定义
