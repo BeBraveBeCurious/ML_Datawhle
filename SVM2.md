@@ -39,5 +39,5 @@ s.t. y_i[\vec W^T\Phi(\vec X_i) + b] \ge 1 - \xi_i \\\\
   - objective: $\min\quad \frac{1}{2}||\vec W||^2 - C\sum_{i=1}^m \xi_i $
 2. non linear SVM's new prime problem
 $\  \min\quad \frac{1}{2}||\vec W||^2 - C\sum_{i=1}^m \xi_i \\\ 
-s.t.  1 + \xi_i - y_i[\vec W^T\Phi(\vec X_i) + b] \ le 0\\\\
+s.t.  1 + \xi_i - y_i[\vec W^T\Phi(\vec X_i) + b] \le 0\\\\
 \quad \ \xi_i \le 0$
