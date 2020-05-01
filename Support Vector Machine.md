@@ -51,7 +51,9 @@ $\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
   - 若$(\vec W, b)$满足公式(1) 且 $a \in R^+$, 则$(a\vec W, ab)$也满足公式(1)
 - 事实2: 点到平面的距离公式
   - 点$(x_0, y_0)$到平面$w_1x + w_2y + b = 0$的距离$d = \frac{\left|w_1x_0 + w_2y_0 + b\right|}{\sqrt{w_1^2 + w_2^2}}$
-  - 向量$x_0$到超平面$\vec W^TX + b = 0$的距离$d = \frac{\left|\vec W^TX + b\right|}{\sqrt{||w||^2}}$
+  - 向量$x_0$到超平面$\vec W^TX + b = 0$的距离$d = \frac{\left|\vec W^TX + b\right|}{||w||}$, where $||w|| = \sqrt{w_1^2 + w_2^2 + \ldots + w_n^2}$
+  $d = \frac{|\vec W^TX + b|}{\sqrt{||w||^2}}$
+  
 
 
 
