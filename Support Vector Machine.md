@@ -105,7 +105,12 @@ s.t. y_i[\vec W^T \Phi(\vec X_i) + b] \ge 1 - \xi_i, \xi_i \ge 0, i = 1, \ldots,
   - 3. **待手拆**。
 5.  $K(\vec X_1, \vec X_2)$ 能写成 $\Phi(\vec X_1)^T\Phi(\vec X_2)$ 的充要条件 (Mercer's Theorem) in 泛函分析
   - **交换性**：$K(\vec X_1, \vec X_2)$ = $K(\vec X_2, \vec X_1)$
-  - **半正定性**： $forall$ 常数 $C_i, \vec X_i$, $K(\vec X_1, \vec X_2)$ = \sum_{i=1}^m\sum_{j=1}^mC_iC_jK(X_i,X_j) \ge 0$
-  
-  
+  - **半正定性**： $\forall$ 常数 $C_i, \vec X_i, K(\vec X_1, \vec X_2) = \sum_{i=1}^m\sum_{j=1}^mC_iC_jK(X_i,X_j) \ge 0$
+### 优化理论：各种各样的资源要素的权衡取舍
+1. 原问题 & 对偶问题
+prime problem:
+$$ \min \quad f(\vec W) \\\ s.t. g_i(\vec W) \le 0, i = 1, \dots, K  \\\ \quad h_i(\vec W) = 0, i = 1, \dots, M $$
+general普适的定义，可解 $\max$ 目标问题和约束 $\ ge 0 $
+dual problem: 
+$$ L(\vec W, \alpha, \beta) = f(\vec W) + \sum{i=1}^K\alpha_ig_i(\vec W) + \sum{i=1}^M\betah_i(\vec W) $$
   
