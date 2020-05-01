@@ -139,5 +139,36 @@ $$ L(\vec W, \alpha, \beta) = f(\vec W) + \sum_{i=1}^K \alpha_i g_i(\vec W) + \s
   - Ref Convex optimization P1-p150
 - KKT条件： $\forall i = 1, \dots, m, \alpha^* _i = 0\ or\ g^* _i(\vec W^*) = 0 $
   
+
+### non linear SVM's dual problem
+1. 强对偶定理的使用条件
+- 目标条件为凸函数(bowl)$\  \min\quad \frac{1}{2}||\vec W||^2 + C\sum_{i=1}^m \xi_i \\\ 
+s.t. y_i[\vec W^T\Phi(\vec X_i) + b] \ge 1 - \xi_i \\\\
+\quad \ \xi_i \ge 0$
+- 约束条件线性改写为$ \le 0$
+  - $\xi_i \le 0 $ 加一个负数 
+  - objective: $\min\quad \frac{1}{2}||\vec W||^2 - C\sum_{i=1}^m \xi_i $
+2. non linear SVM's new prime problem
+$\  \min\quad \frac{1}{2}||\vec W||^2 - C\sum_{i=1}^m \xi_i \\\ 
+s.t.  1 + \xi_i - y_i[\vec W^T\Phi(\vec X_i) + b] \le 0\\\\
+\quad \ \xi_i \le 0$
+
+3. non linear SVM's dual problem
+$ \max \Theta(\vec \mu, \vec \nu) \\\ s.t. \mu_i \ge 0, \nu_i \ge 0 $
+$ \Theta(\vec \mu, \vec \nu) = \inf \limits_{all\ \vec W, \xi_i, b}L(\vec W, \vec \mu, \vec \nu) = \inf \limits_{all\ \vec W, \xi_i, b}(\frac{1}{2}||\vec W||^2 - C\sum_{i=1}^m \xi_i + \sum_{i=1}^m\mu_i (1 + \xi_i - y_i[\vec W^T\Phi(\vec X_i) + b]) + \sum_{i=1}^m\nu_i \xi_i) $
+- $ \inf $求下确界，最小值可通过偏导数=0得到
+  - $\partial\frac{\Theta(\vec \mu, \vec \nu)}{\vec W} = \partial\frac{\frac{1}{2}\vec W^T\vec W}{\vec W} - \partial\frac{\sum_{i=1}^m \mu_i y_i \vec W^T\Phi(\vec X_i)}{\vec W} = \vec W - \sum_{i=1}^m \mu_i y_i\Phi(\vec X_i) \rightarrow \vec W = \sum_{i=1}^m \mu_i y_i\Phi(\vec X_i) \tag{3}$
+  - $\partial\frac{\Theta(\vec \mu, \vec \nu)}{\xi_i} = -C + \mu_i + \nu_i \rightarrow \ C = \mu_i + \nu_i \tag{4} $
+  - $\partial\frac{\Theta(\vec \mu, \vec \nu)}{b} = -\sum_{i=1}^m\mu_i y_i \rightarrow \ \sum_{i=1}^m\mu_i y_i = 0\tag{5} $
+- 根据偏导数=0化简$ \Theta(\vec \mu, \vec \nu) $
+  - Eq. (4) $ \rightarrow \Theta(\vec \mu, \vec \nu)= \inf \limits_{all\ \vec W, \xi_i, b}(\frac{1}{2}||\vec W||^2 + \sum_{i=1}^m\mu_i (1 - y_i[\vec W^T\Phi(\vec X_i) - b])) $
+  - Eq. (5) $ \rightarrow \Theta(\vec \mu, \vec \nu)= \inf \limits_{all\ \vec W, \xi_i, b}(\frac{1}{2}||\vec W||^2 + \sum_{i=1}^m\mu_i -\sum_{i=1}^m \mu_i y_i\vec W^T\Phi(\vec X_i)) $ because $ \sum_{i=1}^m \mu_i y_i b = b \sum_{i=1}^m \mu_i y_i = 0$
+  - 待入Eq. (3)得到，$ \Theta(\vec \mu, \vec \nu) = \inf \limits_{all\ \vec W, \xi_i, b}(\sum_{i=1}^m\mu_i - \frac{1}{2}\sum_{i=1}^m\sum_{j=1}^m \mu_i\mu_j y_iy_j\Phi(\vec X_i)^T\phi(\vec X_j)) \\\
+  = \inf \limits_{all\ \vec W, \xi_i, b}(\sum_{i=1}^m\mu_i - \frac{1}{2}\sum_{i=1}^m\sum_{j=1}^m \mu_i\mu_j y_i y_j K(\vec X_i, \vec X_j)) $ 
+  - s.t.$ 0 \le \mu_i \le C $ because $0 \le \mu_i, 0 \le \nu_i, \mu_i + \nu_i = C\\\ and
+  \quad \sum_{i=1}^m \mu_i y_i = 0 $
+  
+  
+
  
 
