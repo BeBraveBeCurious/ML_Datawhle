@@ -35,7 +35,5 @@ $$
 
 
 $$
-\begin{bmatrix}
-x_1 \\\
-x_2 \\\ \end{bmatrix}
+\begin{bmatrix}x_1 \\\x_2 \\\ \end{bmatrix}
 $$
