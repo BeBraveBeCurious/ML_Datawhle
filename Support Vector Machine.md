@@ -63,6 +63,11 @@ $\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
   - 此时，支持向量与平面的距离 $d = \frac{1}{||\vec W||}$
 
   
+## SVM non-linear模型
+### 非线性可分情况下，约束调节引入slack variable $\Xi, \Xi \ge 0$ 
+- objective 相应变化为$\min\quad \frac{1}{2} ||\vec W||^2 + C \sum_1^n \Xi$
+- s.t. $ y_i[\vec W_^T \vec X + b] \ge 1 - \Xi, \Xi \ge 0$
+
 
 
 
