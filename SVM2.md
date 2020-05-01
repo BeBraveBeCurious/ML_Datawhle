@@ -33,5 +33,5 @@ $$ L(\vec W, \alpha, \beta) = f(\vec W) + \sum_{i=1}^K \alpha_i g_i(\vec W) + \s
 1. 强对偶定理的使用条件
 - $ \min\quad \frac{1}{2}||\vec W||^2 + Csum_{i=1}^m \xi_i \\\ 
 y_i[\vec W^T\Phi(\vec X_i) + b] \ge 1 - \xi_i \\\
-\xi_i \ge 0
+\xi_i \ge 0$
 
