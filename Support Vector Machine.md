@@ -26,7 +26,7 @@
 - $\vec W$ 和 $\vec X_i$ 的特征维数相同，如
 $ \vec X_1 = \begin{bmatrix}x_{11}\\\ x_{12}\\\ \cdots\\\ x_{1n} \end{bmatrix} $; 
 $ \vec W = \begin{bmatrix}w_{1}\\\ w_{2}\\\ \cdots\\\ w_{n} \end{bmatrix} $
-$ \vec W^T = \begin{bmatrix}w_{1} & w_{2} & \cdots & w_{n} \end{bmatrix} $
+$ \vec W^TX_{i} = \begin{bmatrix}w_{1} & w_{2} & \cdots & w_{n} \end{bmatrix}  \begin{bmatrix}x_{i1} \\\ x_{i2} \\\ \cdots \\\ x_{im} \end{bmatrix}$
 
 
 
