@@ -7,7 +7,7 @@ $$ \min \quad f(\vec W) \\\ s.t. g_i(\vec W) \le 0, i = 1, \dots, K  \\\ \quad h
 
 - dual problem: 
 $ \max \Theta(\alpha, \beta) = \inf \limits_{all\quad \vec W}L(\vec W, \alpha, \beta), inf$ = 下确界，min
-s.t. $ \alpha_i \ge 0 or \vec \alpha \succeq 0$
+s.t. $ \alpha_i \ge 0  or  \vec \alpha \succeq 0$
   - where 针对一组 $(\alpha, \beta)$ 的值，需要遍历所有的 $\vec W$ 来求解目标 $\Theta(\alpha, \beta)$ 的max值
 
 $$ L(\vec W, \alpha, \beta) = f(\vec W) + \sum_{i=1}^K \alpha_i g_i(\vec W) + \sum_{i=1}^M \beta_i h_i(\vec W), \xrightarrow{vector form} L(\vec W, \alpha, \beta) = f(\vec W) + \vec \alpha^T g(\vec W) + \vec \beta^T h(\vec W) $$
