@@ -21,4 +21,4 @@ $$ L(\vec W, \alpha, \beta) = f(\vec W) + \sum_{i=1}^K \alpha_i g_i(\vec W) + \s
 - $ \vec W^* $是prime problem $\min \quad f(\vec W)$ 的解$ \rightarrow g_i(\vec W^* ) \le 0, i = 1, \dots, K  \\\ \quad h_i(\vec W^* ) = 0, i = 1, \dots, M $
 - $ (\vec \alpha^* , \vec \beta^* ) $是dual problem $ \max \Theta(\alpha, \beta) $的解$ \rightarrow \alpha_i^* \ge 0 $
 - $ \sum_{i=1}^K \alpha_i^* g_i(\vec W^* ) \le 0, \sum_{i=1}^M \beta_i^* h_i(\vec W^* ) = 0 $
-- $ \Theta(\vec \alpha^* , \vec \beta^* ) \le f(\vec W^* ) + $ 负数 $rightarrow \Theta(\vec \alpha^* , \vec \beta^* ) \le f(\vec W^* ) $
+- $ \Theta(\vec \alpha^* , \vec \beta^* ) \le f(\vec W^* ) + $ 负数 $\rightarrow \Theta(\vec \alpha^* , \vec \beta^* ) \le f(\vec W^* ) $
