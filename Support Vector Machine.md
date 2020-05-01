@@ -17,10 +17,52 @@
 ### support vector 支持向量
 将最大化d (margin)的直线平行移动 与 样本交叉的向量 == Support Vector
 
-### 样本定义
+### 样本+线性模型定义
 $m$ 个训练样本及标签: $(\vec X_1, y_1), (\vec X_2, y_2), (\vec X_3, y_3), \cdots, (\vec X_m, y_m)$
 - $\vec X_i$ 在$R^2$空间中表现为$\begin{bmatrix}x_1 \\\x_2 \\\ \end{bmatrix}$
+- $y_i = \pm 1$为二分类中向量$\vec X_i$的标签
+线性模型参数$(\vec W, b)$
+- Hyperplane: $\vec W^T X + b = $
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 公式换行问题，待研究，码
+$\begin{bmatrix}x_1 \\\x_2 \\\ \end{bmatrix}$
+
+  $\begin{matrix} a & b \\\ c & d \end{matrix}$
+
+$$
+ \left[
+ \begin{matrix}
+   1 & 2 & 3 \\\
+   4 & 5 & 6 \\\
+   7 & 8 & 9
+  \end{matrix}
+  \right] \tag{3}
+$$
+
+
+$$
+\begin{bmatrix}x_1 \\\x_2 \\\ \end{bmatrix}
+$$
   $\begin{matrix} a & b \\\ c & d \end{matrix}$
 
 $$
