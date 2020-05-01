@@ -34,26 +34,26 @@ $ \vec W^TX_{i} = \begin{bmatrix}w_{1} & w_{2} & \cdots & w_{n} \end{bmatrix}  \
 #### 4. 训练集线性可分的定义
 一条直线分开样本集的数学表示
 $\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
-- 若$y_i = 1, \vec W^TX + b \ge 0$
-- 若$y_i = -1, \vec W^TX +b \lt 0$
-- 在$y_i = \pm 1$时，统一表达为$y_i[\vec W^TX + b] \ge 0 \tag{1} $
+- 若$y_i = 1, \vec W^T\vec X + b \ge 0$
+- 若$y_i = -1, \vec W^T\vec X +b \lt 0$
+- 在$y_i = \pm 1$时，统一表达为$y_i[\vec W^T\vec X + b] \ge 0 \tag{1} $
 
 或者以下定义也可，求解的$\vec W, b$有一个负号差距。
-- 若$y_i = 1, \vec W^TX + b \lt 0$
-- 若$y_i = -1, \vec W^TX +b \ge 0$
+- 若$y_i = 1, \vec W^T\vec X + b \lt 0$
+- 若$y_i = -1, \vec W^T\vec X +b \ge 0$
 
 
 ## Linear SVM 优化模型
 - 最大化margin变为最小化$\begin{Vmatrix}w \end{Vmatrix}^2 $
-- subject to $y_i[\vec W^TX + b] \ge 0 $
+- subject to $y_i[\vec W^T\vec X + b] \ge 0 $
 ### 2个事实for目标转化
-- 事实1: $\vec W^TX + b = 0$ 与 $a\vec W^TX + ab = 0, a \in R^+$ 是同一个平面
+- 事实1: $\vec W^T\vec X + b = 0$ 与 $a\vec W^T\vec X + ab = 0, a \in R^+$ 是同一个平面
   - 若$(\vec W, b)$满足公式(1) 且 $a \in R^+$, 则$(a\vec W, ab)$也满足公式(1)
 - 事实2: 点到平面的距离公式
   - 点$(x_0, y_0)$到平面$w_1x + w_2y + b = 0$的距离$d = \frac{\left|w_1x_0 + w_2y_0 + b\right|}{\sqrt{w_1^2 + w_2^2}}$
-  - 向量$x_0$到超平面$\vec W^TX + b = 0$的距离$d = \frac{|\vec W^TX + b|}{||W||}$, where $||W|| = \sqrt{w_1^2 + w_2^2 + \ldots + w_n^2}$
-  - 若$vec X_0$为支持向量，使$d$最大则需使$||w||$最小。
-- 用$a$缩放$(\vec W, b)rightarrow(a\vec W, ab), a \in R^+$使在所有的支持向量$\vec X_0$上有$|W^TX_0 + b| = 1$
+  - 向量$x_0$到超平面$\vec W^T\vec X + b = 0$的距离$d = \frac{|\vec W^T\vec X + b|}{||W||}$, where $||W|| = \sqrt{w_1^2 + w_2^2 + \ldots + w_n^2}$
+  - 若$\vec X_0$为支持向量，使$d$最大则需使$||w||$最小。
+- 用$a$缩放$(\vec W, b)\rightarrow(a\vec W, ab), a \in R^+$使在所有的支持向量$\vec X_0$上有$|W^T\vec X_0 + b| = 1$
   - 此时，支持向量与平面的距离 $d = frac{1}{||W||}
 
   
