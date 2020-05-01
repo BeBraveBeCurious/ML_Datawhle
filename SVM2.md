@@ -46,6 +46,6 @@ s.t.  1 + \xi_i - y_i[\vec W^T\Phi(\vec X_i) + b] \le 0\\\\
 $ \max \Theta(\vec \mu, \vec \nu) \\\ s.t. \mu_i \ge 0, \nu_i \ge 0 $
 $ \Theta(\vec \mu, \vec \nu) = \inf \limits_{all\ \vec W}L(\vec W, \vec \mu, \vec \nu) = \inf \limits_{all\ \vec W}(\frac{1}{2}||\vec W||^2 - C\sum_{i=1}^m \xi_i + \sum_{i=1}^m\mu_i (1 + \xi_i - y_i[\vec W^T\Phi(\vec X_i) + b]) + \sum_{i=1}^m\nu_i \xi_i) $
 - $ \inf $求下确界，最小值可通过偏导数=0得到
-  - $\partial\frac{\Theta(\vec \mu, \vec \nu)}{\vec W} = \partial\frac{\frac{1}{2}\vec W^T\vec W}{\vec W} + \partial\sum_{i=1}^m \mu_i y_i \vec W^T\Phi(\vec X_i) = \vec W + \sum_{i=1}^m \mu_i y_i\Phi(\vec X_i) $
+  - $\partial\frac{\Theta(\vec \mu, \vec \nu)}{\vec W} = \partial\frac{\frac{1}{2}\vec W^T\vec W}{\vec W} - \partial\frac{\sum_{i=1}^m \mu_i y_i \vec W^T\Phi(\vec X_i)}{\vec W} = \vec W - \sum_{i=1}^m \mu_i y_i\Phi(\vec X_i) $
   - $\partial\frac{\Theta(\vec \mu, \vec \nu)}{\xi_i} = -C + \mu_i + \nu_i \rightarrow \ C = \mu_i + \nu_i $
   - $\partial\frac{\Theta(\vec \mu, \vec \nu)}{b} = -\sum_{i=1}^m\mu_i y_i \rightarrow \ \sum_{i=1}^m\mu_i y_i = 0$
