@@ -18,4 +18,8 @@
 将最大化d (margin)的直线平行移动 与 样本交叉的向量 == Support Vector
 
 ### 样本定义
-m 个训练样本及标签: (\vec X_1, y_1), (\vec X_2, y_2), (\vec X_3, y_3), \cdots, (\vec X_m, y_m)
+m 个训练样本及标签: $(\vec X_1, y_1), (\vec X_2, y_2), (\vec X_3, y_3), \cdots, (\vec X_m, y_m)$
+- $\vec X_i$ 在 $r^2$空间中表现为$\begin{bmatrix}
+x_1 \\
+x_2 \\
+\end{bmatrix}$
