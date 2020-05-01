@@ -44,7 +44,7 @@ $\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
 
 
 ## Linear SVM 优化模型
-- 最大化margin变为最小化$\begin{Vmatrix}w \end{Vmatrix} $
+- 最大化margin变为最小化$\begin{Vmatrix}w \end{Vmatrix}^2 $
 - subject to $y_i[\vec W^TX + b] \ge 0 $
 
 
