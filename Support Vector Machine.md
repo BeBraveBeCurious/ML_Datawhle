@@ -100,6 +100,12 @@ s.t. y_i[\vec W^T \Phi(\vec X_i) + b] \ge 1 - \xi_i, \xi_i \ge 0, i = 1, \ldots,
 - 知道核函数Kernel function： $K(\vec X_1, \vec X_2) = \Phi(\vec X_1)^T\Phi(\vec X_2)$, $\Phi(\vec X_1)$ 和 $\Phi(\vec X_2)$ 两个无限维向量的内积
 - 则nonlinear SVM优化(2)可解
 4. 常见的Kernel function 形式
-  1. Gaussian Kernal: $K(\vec X_1, \vec X_2) = e^{-frac{||\vec X_1 - \vec X_2||^2}{2\sigma^2}} = \Phi(\vec X_1)^T\Phi(\vec X_2)$
-  2. Ploynomial Kernel: $K(\vec X_1, \vec X_2) = (\vec X_1^T\vec X_2 + 1)^d = \Phi(\vec X_1)^T\Phi(\vec X_2)$, $d$ 是多项式维数
-  3. **待手拆**。
+  - 1. Gaussian Kernal: $K(\vec X_1, \vec X_2) = e^{-\frac{||\vec X_1 - \vec X_2||^2}{2\sigma^2}} = \Phi(\vec X_1)^T\Phi(\vec X_2)$
+  - 2. Ploynomial Kernel: $K(\vec X_1, \vec X_2) = (\vec X_1^T\vec X_2 + 1)^d = \Phi(\vec X_1)^T\Phi(\vec X_2)$, $d$ 是多项式维数
+  - 3. **待手拆**。
+5.  $K(\vec X_1, \vec X_2)$ 能写成 $\Phi(\vec X_1)^T\Phi(\vec X_2)$ 的充要条件 (Mercer's Theorem) in 泛函分析
+  - **交换性**：$K(\vec X_1, \vec X_2)$ = $K(\vec X_2, \vec X_1)$
+  - **半正定性**： $forall$ 常数 $C_i, \vec X_i$, $K(\vec X_1, \vec X_2)$ = \sum_{i=1}^m\sum_{j=1}^mC_iC_jK(X_i,X_j) \ge 0$
+  
+  
+  
