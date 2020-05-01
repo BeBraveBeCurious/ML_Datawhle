@@ -16,4 +16,4 @@ $$ L(\vec W, \alpha, \beta) = f(\vec W) + \sum_{i=1}^K \alpha_i g_i(\vec W) + \s
 
 2. relationship between prime problem and dual problem
 - 定理： 若$ \vec W^* $是prime problem $\min \quad f(\vec W)$ 的解，而$ (\vec \alpha^* , \vec \beta^* ) $是dual problem $ \max \Theta(\alpha, \beta) $的解，则$ f(\vec W^* ) \ge \Theta(\vec \alpha^* , \vec \beta^* ) $
-- 证明： $ \Theta(\vec \alpha^* , \vec \beta^* ) = \inf \limits_{all\ \vec W}L(\vec W, \alpha^*, \beta^*) \le \inf \limits_{all\ \vec W}L(\vec W^*, \alpha^*, \beta^*)$
+- 证明： $ \Theta(\vec \alpha^* , \vec \beta^* ) = \inf \limits_{all\ \vec W}L(\vec W, \alpha^*, \beta^*) \le \inf \limits_{all\ \vec W}L(\vec W^*, \alpha^*, \beta^*) $
