@@ -5,6 +5,7 @@
 - 性能评估的必要性
 - 先验知识的总结: 太阳每天会从东方升起
 - 农夫养鸡
+- 蜜蜂花蕊图
 
 ## 动画直观感受
 [2-dimension SVM](https://github.com/BeBraveBeCurious/ML_Datawhle/blob/master/gif/8.SVM.gif)
@@ -73,6 +74,24 @@ $\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
 - libsvm 中 $C$ 的值是[-15:0.5:15],不断尝试； SVM中需要尝试的参数只有 $C$ 
 - 已知量是 $ y_i, \vec X_i
 - 待求量是 $\vec W, b, \xi_i$
+
+### 低维到高维的映射 $\Phi(x)$
+- [低维不可分的SVM图像1](https://github.com/BeBraveBeCurious/ML_Datawhle/blob/master/images/SVM-%E9%9D%9E%E7%BA%BF%E6%80%A7%E6%A0%B7%E6%9C%AC%E5%8F%AF%E5%88%86%E5%9B%BE.png)
+- [低维不可分的SVM图像2](https://github.com/BeBraveBeCurious/ML_Datawhle/blob/master/images/SVM%E6%9B%B2%E9%9D%A2%E6%8A%95%E5%BD%B1.PNG)
+- Vapnik仍然找直线，在高维空间找平面by高维映射的定义
+1. XOR异或问题 in $R^2$
+- 4个点坐标和类别
+  - $$ x_1 = \begin{bmatrix}0 \\\0 \\\ \end{bmatrix} \in C_1 $$
+  - $$ x_2 = \begin{bmatrix}1 \\\1 \\\ \end{bmatrix} \in C_1 $$
+  - $$ x_3 = \begin{bmatrix}1 \\\0 \\\ \end{bmatrix} \in C_2 $$
+  - $$ x_4 = \begin{bmatrix}0 \\\1 \\\ \end{bmatrix} \in C_2 $$
+- $X = \begin{bmatrix}a \\\b \\\ \end{bmatrix} \underrightarrow{\text{\Phi(x)}} \Phi(x) = \begin{bmatrix}a^2 \\\b^2 \\\ a \\\b \\\ab \end{bmatrix}
+
+
+\Phi(x)$ = a^2 + b^2 + a + b 
+
+
+
 
 
 
