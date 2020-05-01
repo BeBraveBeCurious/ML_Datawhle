@@ -36,7 +36,7 @@ $ \vec W^T\vec X_{i} = \begin{bmatrix}w_{1} & w_{2} & \cdots & w_{n} \end{bmatri
 $\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
 - 若$y_i = 1, \vec W^T\vec X + b \ge 0$
 - 若$y_i = -1, \vec W^T\vec X +b \lt 0$
-- 在$y_i = \pm 1$时，统一表达为$y_i[\vec W^T\vec X + b] \ge 0, \for all i = 1, \ldots, m. \tag{1} $
+- 在$y_i = \pm 1$时，统一表达为$y_i[\vec W^T\vec X + b] \ge 0, \forall i = 1, \ldots, m. \tag{1} $
 
 或者以下定义也可，求解的$\vec W, b$有一个负号差距。
 - 若$y_i = 1, \vec W^T\vec X + b \lt 0$
@@ -45,7 +45,7 @@ $\exists (\vec W, b)$使训练样本$(\vec X_i, y_i), i = 1, \ldots, m$ 有
 
 ## Linear SVM 优化模型
 - 最大化margin变为最小化$\begin{Vmatrix}w \end{Vmatrix}^2 $
-- subject to $y_i[\vec W^T\vec X + b] \ge 0 $
+- subject to $y_i[\vec W^T\vec X + b] \ge 1 $
 ### 2个事实for目标转化
 - 事实1: $\vec W^T\vec X + b = 0$ 与 $a\vec W^T\vec X + ab = 0, a \in R^+$ 是同一个平面
   - 若$(\vec W, b)$满足公式(1) 且 $a \in R^+$, 则$(a\vec W, ab)$也满足公式(1)
