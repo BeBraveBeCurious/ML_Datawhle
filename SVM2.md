@@ -33,5 +33,11 @@ $$ L(\vec W, \alpha, \beta) = f(\vec W) + \sum_{i=1}^K \alpha_i g_i(\vec W) + \s
 1. 强对偶定理的使用条件
 - 目标条件为凸函数(bowl)$\  \min\quad \frac{1}{2}||\vec W||^2 + C\sum_{i=1}^m \xi_i \\\ 
 s.t. y_i[\vec W^T\Phi(\vec X_i) + b] \ge 1 - \xi_i \\\\
-\quad \xi_i \ge 0$
-
+\quad \ \xi_i \ge 0$
+- 约束条件线性改写为$ \le 0$
+  - $\xi_i \le 0 $ 加一个负数 
+  - objective: $\min\quad \frac{1}{2}||\vec W||^2 - C\sum_{i=1}^m \xi_i $
+2. non linear SVM's new prime problem
+$\  \min\quad \frac{1}{2}||\vec W||^2 - C\sum_{i=1}^m \xi_i \\\ 
+s.t.  1 + \xi_i - y_i[\vec W^T\Phi(\vec X_i) + b] \ le 0\\\\
+\quad \ \xi_i \le 0$
