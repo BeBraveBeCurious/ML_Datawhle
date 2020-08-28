@@ -16,7 +16,7 @@ False False
 
 
 【例子】比较的两个变量均指向可变类型。
-'''
+```
 a = ["hello"]
 
 b = ["hello"]
@@ -24,7 +24,7 @@ b = ["hello"]
 print(a is b, a == b)  # False True
 
 print(a is not b, a != b)  # True False
-'''
+```
 
 False True
 True False
