@@ -23,3 +23,14 @@ class dtype(object):
 	def __init__(self, obj, align=False, copy=False):
 		pass  
 
+
+对照比较是按元素返回结果的
+```
+1. numpy.greater(x1, x2, *args, **kwargs) Return the truth value of (x1 > x2) element-wise.
+2. numpy.greater_equal(x1, x2, *args, **kwargs) Return the truth value of (x1 >= x2) element-wise.
+3. numpy.equal(x1, x2, *args, **kwargs) Return (x1 == x2) element-wise.
+4. numpy.not_equal(x1, x2, *args, **kwargs) Return (x1 != x2) element-wise.
+5. numpy.less(x1, x2, *args, **kwargs) Return the truth value of (x1 < x2) element-wise.
+6. numpy.less_equal(x1, x2, *args, **kwargs) Return the truth value of (x1 =< x2) element-wise.
+```
+
